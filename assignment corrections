@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content=" assignment page">
+    <meta name="keywords" content="assignment 1">
+    <title>assignment 1</title>
+</head>
+<body>
+<header>
+    <h1>Welcome to Assignment 1</h1>
+    <nav>
+        <ul>
+            <li><a href="#section1">home</a></li>
+            <li><a href="#section2">task</a></li>
+            <li><a href="#section3">project</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="section1">
+        <h2>Home</h2>
+        <p>This is the home section.</p>
+    </section>
+    <section id="section2">
+        <h2>Task</h2>
+        <p>This is the task section.</p>
+    </section>
+    <section id="section3">
+        <h2>Project</h2>
+        <p>This is the project section.</p>
+    </section>
+</main>
+</html>
