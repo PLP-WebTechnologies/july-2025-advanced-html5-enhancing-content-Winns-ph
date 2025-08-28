@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Section Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #aaa;
+    }
+    legend {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+    }
+    input[type="submit"] {
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: auto;
+      padding: 10px 20px;
+    }
+    input[type="submit"]:hover {
+      background-color: #34495e;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌐 My Multi-Section Web Page</h1>
+
+  <!-- Section 1: Lists -->
+  <section>
+    <h2>1. My Favorite Hobbies (List Example)</h2>
+    <ul>
+      <li>Reading books 📚</li>
+      <li>Sketching 🎨</li>
+      <li>Coding 💻</li>
+      <li>Traveling ✈️</li>
+    </ul>
+  </section>
+
+  <!-- Section 2: Tables -->
+  <section>
+    <h2>2. Weekly Schedule (Table Example)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Activity</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Gym</td>
+          <td>6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Web Development Class</td>
+          <td>4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Movie Night</td>
+          <td>8:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media -->
+  <section>
+    <h2>3. Media Showcase</h2>
+    <p>Here’s an image and an audio clip:</p>
+    <img src="https://via.placeholder.com/300x200" alt="Sample Image">
+    <br><br>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Section 4: HTML5 Form -->
+  <section>
+    <h2>4. Registration Form</h2>
+    <form action="#" method="post">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,}" title="At least 5 letters or numbers">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">-- Select --</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" minlength="10" maxlength="200"></textarea>
+      </fieldset>
+
+      <input type="submit" value="Submit Form">
+    </form>
+  </section>
+
+</body>
+</html>
